@@ -270,9 +270,9 @@ class Dataset_Custom(Dataset):
             self.data_y = data[border1:border2]
         self.data_stamp = data_stamp
         
-        print("yesyes")
-        print(self.data_x)
-        print(self.data_y)
+#        print("yesyes")
+#        print(self.data_x)
+#        print(self.data_y)
     
     def __getitem__(self, index):
         s_begin = index
@@ -297,7 +297,7 @@ class Dataset_Custom(Dataset):
 #        writer.save()
 #        writer.close()
 
-        exit()
+        #exit()
         return seq_x, seq_y, seq_x_mark, seq_y_mark
     
     def __len__(self):
